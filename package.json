@@ -4,7 +4,7 @@
   "description": "assessment for diploma qualification",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "rm -rf ./dist/css & sass --watch src/scss:dist/css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dumitrusf/Parrot-Jury/issues"
   },
-  "homepage": "https://github.com/dumitrusf/Parrot-Jury#readme"
+  "homepage": "https://github.com/dumitrusf/Parrot-Jury#readme",
+  "devDependencies": {
+    "sass": "^1.77.5"
+  }
 }
