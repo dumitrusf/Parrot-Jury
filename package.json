@@ -2,9 +2,11 @@
   "name": "parrot-jury",
   "version": "1.0.0",
   "description": "assessment for diploma qualification",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "sass": "rm -rf ./dist/css & sass --watch src/scss:dist/css"
+    "sass": "rm -rf ./dist/css & sass --watch src/scss:dist/css",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "homepage": "https://github.com/dumitrusf/Parrot-Jury#readme",
   "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.77.5"
   }
 }
