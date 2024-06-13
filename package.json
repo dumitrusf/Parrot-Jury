@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "rm -rf ./dist/css & sass --watch src/scss:dist/css",
-    "dev": "gulp dev"
+    "dev": "gulp"
   },
   "repository": {
     "type": "git",
