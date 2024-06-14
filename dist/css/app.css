@@ -307,6 +307,14 @@ template {
   display: none;
 }
 
-body {
-  background-color: rgb(100, 144, 100);
+h1 {
+  font-family: "Italianno";
+  color: #211B0A;
+  width: 90vw;
+  font-size: clamp(0.7292vw, 0.875rem, 14px);
+}
+
+div {
+  width: 33vw;
+  background-color: red;
 }

@@ -1,5 +1,13 @@
-@use 'base/normalize.scss';
+@use "./base" as *;
 
-body {
-    background-color: rgb(100, 144, 100);
+h1 {
+  font-family: $buttons;
+  color: $darkBrown;
+ width: 90vw;
+  font-size: $h4-mobile;
+}
+
+div{
+    width: 33vw;
+    background-color: red;
 }
