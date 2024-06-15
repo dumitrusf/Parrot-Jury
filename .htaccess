@@ -1,0 +1,18 @@
+# Disable directory listing if there is no index file present
+Options All -Indexes
+
+# Enable the URL rewriting engine
+RewriteEngine On
+
+# Check if the requested filename is not a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Check if the requested filename is not a regular file
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# If the above conditions are met, rewrite the URL
+# ^(.*)$ captures the entire requested URL
+# Redirect to index.php and pass the captured URL as a "url" parameter
+# QSA ensures any existing query string is appended
+# L indicates this is the last rule to be applied
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
