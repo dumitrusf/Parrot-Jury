@@ -311,10 +311,20 @@ h1 {
   font-family: "Italianno";
   color: #211B0A;
   width: 90vw;
-  font-size: clamp(0.7292vw, 0.875rem, 14px);
+  font-size: clamp(1.1458vw, 1.375rem, 22px);
+}
+@media screen and (min-width: 576px) {
+  h1 {
+    font-size: clamp(1.3542vw, 1.625rem, 26px);
+  }
+}
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: clamp(1.5625vw, 1.875rem, 30px);
+  }
 }
 
 div {
   width: 33vw;
-  background-color: red;
+  background-color: rgb(123, 157, 108);
 }

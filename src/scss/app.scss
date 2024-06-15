@@ -3,11 +3,20 @@
 h1 {
   font-family: $buttons;
   color: $darkBrown;
- width: 90vw;
-  font-size: $h4-mobile;
-}
+  width: 90vw;
+  font-size: $h1-mobile;
 
-div{
-    width: 33vw;
-    background-color: red;
-}
+  @include responsive(tablet) {
+    font-size: $h1-tablet;
+  };
+
+  @include responsive(laptop) {
+    font-size: $h1-laptop;
+  };
+  
+};
+
+div {
+  width: 33vw;
+  background-color: rgb(123, 157, 108);
+};
